@@ -1,0 +1,252 @@
+/* Variables */
+/* Colores de la pagina */
+
+$color-primario: rgb(168, 118, 118);
+$color-secundario:rgb(245, 225, 229);
+$color-terciario:rgb(243, 204, 212);
+$color-fondo:rgb(245, 244, 244);
+$color-letra-negro: rgb(15,15,15,);
+$color-letra-gris:rgb(87, 86, 86);
+$color-fondo-footer: rgb(83, 82, 82);
+
+/* Tamños de letra  */
+
+$letra-xs: 0.95rem;
+$letra-s: 1rem;
+$letra-m: 1.6rem;
+$letra-l: 2.6rem;
+
+/* Margenes */
+
+$margin-2: 2rem;
+$margin-3: 3rem;
+
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+
+
+
+.main-header{
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 768px) {
+        &{
+            flex-direction: column;
+        }
+    }
+}
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: yellow;
+    }
+} 
+
+/* -------------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------------- */
+
+.nav-bar{ 
+    background-color: $color-primario;
+    display: none; /* va flex para desktop */
+    width: 100%;
+    justify-content: center;
+    @media (min-width: 768px) {
+        &{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__nav-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 768px) {
+            &{
+                flex-direction: row;
+                
+            }
+        }
+    }
+    &__nav-item{
+        margin-bottom: 10px;
+        @media (min-width: 768px) {
+            &{
+                margin: 1rem 2rem;
+            }
+        }
+    }
+    &__nav-link{
+        color: $color-secundario;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover{
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+    }
+    &__nav-link:hover{
+        color: $color-letra-gris;
+    }
+}
+
+/* -------------------------------------------------------- */
+/* SEARCH BAR */
+/* -------------------------------------------------------- */
+
+.search-bar{
+    display: flex;
+    align-items: center; /* centra verticalmente */
+    background-color: $color-secundario;
+    width: 100%;
+    padding: 1rem;
+    gap: 10px;
+    margin-bottom: 1rem;
+    &__logo-container{
+        width: 50%;
+        background-color: $color-secundario;
+        color: $color-letra-gris;
+        width: 100%;
+        display: flex;
+        
+    }
+    &__carrito-container{
+        width: 10%;
+        @media (min-width: 768px) {
+            &{
+                width: 5%;
+            }
+        }
+    }
+
+    &__form-container{
+        display: none;
+        @media (min-width: 768px) {
+            &{
+                display: flex;
+                justify-content: center;
+                margin-right: 10rem
+            }
+        }
+    
+    }
+
+    @media (min-width: 768px) {
+        &__form-label{
+            display: none;
+        }
+        &__form-search{
+            border-radius: 5px;
+            border: 2px solid $color-primario;
+            margin-right: 1rem;
+            height: 2rem;
+            width: 40rem;
+            padding: 0 1rem;
+            
+        }
+        &__form-submit{
+            background-color: $color-terciario;
+            border-radius: 5px;
+            border: 2px solid $color-primario;
+            padding: .5rem;
+            
+
+        }
+        }
+        &__button{
+            @media (min-width: 768px) {
+                &{
+                    padding:8px 20px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    border: 0;
+                    background-color: white;
+                    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    font-size: $letra-xs;
+                    transition: all 0.5s ease;
+                }
+                &:hover{
+                    letter-spacing: 3px;
+                    background-color: $color-primario;
+                    color: hsl(0, 0%, 100%);
+                    box-shadow: $color-primario 0px 7px 29px 0px;
+                }
+                &:active{
+                    letter-spacing: 3px;
+                    background-color: $color-primario;
+                    color: hsl(0, 0%, 100%);
+                    box-shadow: $color-primario 0px 0px 0px 0px;
+                    transform: translateY(10px);
+                    transition: 100ms;
+                }
+            }
+        }
+    }
+
+
+
+
+/* -------------------------------------------------------- */
+/* MENÚ TOOGLE */
+/* -------------------------------------------------------- */
+
+.menu-toogle {
+    display: block; /* none para desktop */
+    background-color: red;
+    flex: 0 0 3rem;
+    cursor: pointer;
+    position: relative;
+    @media (min-width: 768px) {
+        display: none;
+    }
+    
+    &__label {
+        display: block;
+        height: 100% ;
+        background-color: $color-letra-negro;
+    }
+
+    &__top-bread, 
+    &__meat, 
+    &__bottom-bread {
+        display: block;
+        height: 0.2rem;
+        position: absolute;
+        left: 0.5rem;
+        right: 0.5rem;
+        background-color: $color-letra-negro;
+
+    }
+
+
+    &__top-bread {
+        top: 0.8rem;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -0.1rem;
+    }
+
+    &__bottom-bread {
+        bottom: 0.8rem;
+    }
+}

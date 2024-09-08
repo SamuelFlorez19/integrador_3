@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Variables */
+/* Colores de la pagina */
+
+$color-primario: rgb(168, 118, 118);
+$color-secundario:rgb(245, 225, 229);
+$color-terciario:rgb(243, 204, 212);
+$color-fondo:rgb(245, 244, 244);
+$color-letra-negro: rgb(15,15,15,);
+$color-letra-gris:rgb(87, 86, 86);
+$color-fondo-footer: rgb(83, 82, 82);
+
+/* Tamños de letra  */
+
+$letra-xs: 0.95rem;
+$letra-s: 1rem;
+$letra-m: 1.6rem;
+$letra-l: 2.6rem;
+
+/* Margenes */
+
+$margin-2: 2rem;
+$margin-3: 3rem;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-fondo;
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%; // default navegadores 16 px
+}
+

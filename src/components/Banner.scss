@@ -1,0 +1,82 @@
+/* Variables */
+/* Colores de la pagina */
+
+$color-primario: rgb(168, 118, 118);
+$color-secundario:rgb(245, 225, 229);
+$color-terciario:rgb(243, 204, 212);
+$color-fondo:rgb(245, 244, 244);
+$color-letra-negro: rgb(15,15,15,);
+$color-letra-gris:rgb(87, 86, 86);
+$color-fondo-footer: rgb(83, 82, 82);
+
+/* Tamños de letra  */
+
+$letra-xs: 0.95rem;
+$letra-s: 1rem;
+$letra-m: 1.6rem;
+$letra-l: 2.6rem;
+
+/* Margenes */
+
+$margin-2: 2rem;
+$margin-3: 3rem;
+
+/* -------------------------------------------------------- */
+/* BANNER */
+/* -------------------------------------------------------- */
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+    width: 97vw; 
+    background-color: $color-fondo;
+    @media (min-width: 768px) {
+        height: 95vh;
+        margin-top: -3.8rem;
+    }
+}
+
+.main-search{
+    margin: 3rem 10rem;
+    background-image: url(/public/img/bannerimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+
+        font-size: $letra-l;
+        font-weight: bolder;
+        color: white;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+        margin-top: 2.5rem;
+        letter-spacing: 2px;
+    }
+}

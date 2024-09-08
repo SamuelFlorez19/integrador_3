@@ -1,0 +1,106 @@
+/* Variables */
+/* Colores de la pagina */
+
+$color-primario: rgb(168, 118, 118);
+$color-secundario:rgb(245, 225, 229);
+$color-terciario:rgb(243, 204, 212);
+$color-fondo:rgb(245, 244, 244);
+$color-letra-negro: rgb(15,15,15,);
+$color-letra-gris:rgb(87, 86, 86);
+$color-fondo-footer: rgb(83, 82, 82);
+
+/* Tamños de letra  */
+
+$letra-xs: 0.95rem;
+$letra-s: 1rem;
+$letra-m: 1.6rem;
+$letra-l: 2.6rem;
+
+/* Margenes */
+
+$margin-2: 2rem;
+$margin-3: 3rem;
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-fondo-footer;
+    padding: 1rem;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+    &__column{
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    &__title{
+        font-size: $letra-s;
+        margin-bottom: 1.3rem;
+        color: #fff;
+    }
+    &__text{
+        font-size: $letra-m;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__form{
+        display: flex;
+    }
+    &__input{
+        flex: 1;
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        background-color: #fff;
+        color: $color-letra-negro;
+        border-radius: 10px;
+    }
+    &__list{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-top:1rem ;
+    }
+    &__list-item{
+
+        margin-right: 10px;
+        @media (min-width: 768px) {
+            &{
+                width: 20%;
+            }
+        }
+    }
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &__link:hover {
+            text-decoration: underline
+        }
+    }
+
+&__facebook,
+&__instagram,
+&__twitter{
+    width: 28%;
+}
+    &__copyrigth{
+        display: flex;
+        justify-content: center;
+    }
+    &__text-copyright{
+        color: #fff;
+    }
+}
