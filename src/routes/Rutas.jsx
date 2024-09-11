@@ -4,6 +4,7 @@ import Alta from "../pages/Alta"
 import NoEncontrado from "../pages/NoEncontrado"
 import Nosotros from "../pages/Nosotros"
 import Contacto from "../pages/Contacto"
+import Carrito from "../pages/Carrito"
 
 const Rutas = () => {
     const routes = useRoutes([
@@ -26,6 +27,10 @@ const Rutas = () => {
         {
             path: "/contacto",
             element: <Contacto />
+        },
+        {
+            path: "/carrito",
+            element: <Carrito />
         }
     ])
     return routes

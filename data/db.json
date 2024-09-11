@@ -1,149 +1,178 @@
 {
-    "productos": [
-        {
-            "nombre": "Neacklace-1",
-            "foto": "img/necklace-1.jpg",
-            "descripcion": "Collar dorado con un diseño elegante y colgante distintivo.",
-            "precio": "99.99",
-            "id": "1"
-
-        },
-        {
-            "nombre": "Neacklace-2",
-            "foto": "img/necklace-2.jpg",
-            "descripcion": "Collar plateado con un colgante elegante y moderno.",
-            "precio": "129.99",
-            "id": "2"
-        },
-        {
-            "nombre": "Neacklace-3",
-            "foto": "img/necklace-3.jpg",
-            "descripcion": "Collar plateado con un diseño delicado y refinado.",
-            "precio": "59.99",
-            "id": "3"
-        },
-        {
-            "nombre": "Neacklace-4",
-            "foto": "img/necklace-4.jpg",
-            "descripcion": "Collar plateado con un diseño lujoso y sofisticado",
-            "precio": "249.99",
-            "id": "4"
-        },
-        {
-            "nombre": "Neacklace-5",
-            "foto": "img/necklace-5.jpg",
-            "descripcion": "Collar dorado con un diseño clásico y versátil.",
-            "precio": "97.99",
-            "id": "5"
-        },
-        {
-            "nombre": "Ring-1",
-            "foto": "img/ring-1.jpg",
-            "descripcion": "Anillo plateado con un diseño moderno y llamativo.",
-            "precio": "39.99",
-            "id": "6"
-        },
-        {
-            "nombre": "Ring-2",
-            "foto": "img/ring-2.jpg",
-            "descripcion": "Anillo dorado con un diseño sencillo y elegante. ",
-            "precio": "19.99",
-            "id": "7"
-        },
-        {
-            "nombre": "Ring-3",
-            "foto": "img/ring-3.jpg",
-            "descripcion": "Anillo plateado con detalles sutiles y elegantes.",
-            "precio": "29.99",
-            "id": "8"
-        },
-        {
-            "nombre": "Ring-4",
-            "foto": "img/ring-4.jpg",
-            "descripcion": "Anillo dorado con un diseño refinado y moderno.",
-            "precio": "24.99",
-            "id": "9"
-        },
-        {
-            "nombre": "Ring-5",
-            "foto": "img/ring-5.jpg",
-            "descripcion": "Anillo plateado con un diseño distintivo y elegante.",
-            "precio": "32.99",
-            "id": "10"
-        }
-    ],
-    "carrito": [
-        [
-            {
-                "nombre": "Neacklace-1",
-                "foto": "img/necklace-1.jpg",
-                "descripcion": "Collar dorado con un diseño elegante y colgante distintivo.",
-                "precio": "99.99",
-                "id": "1"
-            },
-            {
-                "nombre": "Neacklace-2",
-                "foto": "img/necklace-2.jpg",
-                "descripcion": "Collar plateado con un colgante elegante y moderno.",
-                "precio": "129.99",
-                "id": "2"
-            },
-            {
-                "nombre": "Neacklace-3",
-                "foto": "img/necklace-3.jpg",
-                "descripcion": "Collar plateado con un diseño delicado y refinado.",
-                "precio": "59.99",
-                "id": "3"
-            },
-            {
-                "nombre": "Neacklace-4",
-                "foto": "img/necklace-4.jpg",
-                "descripcion": "Collar plateado con un diseño lujoso y sofisticado",
-                "precio": "249.99",
-                "id": "4"
-            },
-            {
-                "nombre": "Neacklace-5",
-                "foto": "img/necklace-5.jpg",
-                "descripcion": "Collar dorado con un diseño clásico y versátil.",
-                "precio": "97.99",
-                "id": "5"
-            },
-            {
-                "nombre": "Ring-1",
-                "foto": "img/ring-1.jpg",
-                "descripcion": "Anillo plateado con un diseño moderno y llamativo.",
-                "precio": "39.99",
-                "id": "6"
-            },
-            {
-                "nombre": "Ring-2",
-                "foto": "img/ring-2.jpg",
-                "descripcion": "Anillo dorado con un diseño sencillo y elegante. ",
-                "precio": "19.99",
-                "id": "7"
-            },
-            {
-                "nombre": "Ring-3",
-                "foto": "img/ring-3.jpg",
-                "descripcion": "Anillo plateado con detalles sutiles y elegantes.",
-                "precio": "29.99",
-                "id": "8"
-            },
-            {
-                "nombre": "Ring-4",
-                "foto": "img/ring-4.jpg",
-                "descripcion": "Anillo dorado con un diseño refinado y moderno.",
-                "precio": "24.99",
-                "id": "9"
-            },
-            {
-                "nombre": "Ring-5",
-                "foto": "img/ring-5.jpg",
-                "descripcion": "Anillo plateado con un diseño distintivo y elegante.",
-                "precio": "32.99",
-                "id": "10"
-            }
-        ]
+  "productos": [
+    {
+      "nombre": "Neacklace-1",
+      "foto": "img/necklace-1.jpg",
+      "descripcion": "Collar dorado con un diseño elegante y colgante distintivo.",
+      "precio": "99.99",
+      "id": "1",
+      "stock": 4,
+      "categoria": "Collares",
+      "envio": true
+    },
+    {
+      "nombre": "Neacklace-2",
+      "foto": "img/necklace-2.jpg",
+      "descripcion": "Collar plateado con un colgante elegante y moderno.",
+      "precio": "129.99",
+      "id": "2",
+      "stock": 5,
+      "categoria": "Collares",
+      "envio": false
+    },
+    {
+      "nombre": "Neacklace-3",
+      "foto": "img/necklace-3.jpg",
+      "descripcion": "Collar plateado con un diseño delicado y refinado.",
+      "precio": "59.99",
+      "id": "3",
+      "stock": 2,
+      "categoria": "Collares",
+      "envio": true
+    },
+    {
+      "nombre": "Neacklace-4",
+      "foto": "img/necklace-4.jpg",
+      "descripcion": "Collar plateado con un diseño lujoso y sofisticado",
+      "precio": "249.99",
+      "id": "4",
+      "stock": 7,
+      "categoria": "Collares",
+      "envio": true
+    },
+    {
+      "nombre": "Neacklace-5",
+      "foto": "img/necklace-5.jpg",
+      "descripcion": "Collar dorado con un diseño clásico y versátil.",
+      "precio": "97.99",
+      "id": "5",
+      "stock": 5,
+      "categoria": "Collares",
+      "envio": false
+    },
+    {
+      "nombre": "Ring-1",
+      "foto": "img/ring-1.jpg",
+      "descripcion": "Anillo plateado con un diseño moderno y llamativo.",
+      "precio": "39.99",
+      "id": "6",
+      "stock": 6,
+      "categoria": "Anillos",
+      "envio": true
+    },
+    {
+      "nombre": "Ring-2",
+      "foto": "img/ring-2.jpg",
+      "descripcion": "Anillo dorado con un diseño sencillo y elegante. ",
+      "precio": "19.99",
+      "id": "7",
+      "stock": 3,
+      "categoria": "Anillos",
+      "envio": true
+    },
+    {
+      "nombre": "Ring-3",
+      "foto": "img/ring-3.jpg",
+      "descripcion": "Anillo plateado con detalles sutiles y elegantes.",
+      "precio": "29.99",
+      "id": "8",
+      "stock": 5,
+      "categoria": "Anillos",
+      "envio": false
+    },
+    {
+      "nombre": "Ring-4",
+      "foto": "img/ring-4.jpg",
+      "descripcion": "Anillo dorado con un diseño refinado y moderno.",
+      "precio": "24.99",
+      "id": "9",
+      "stock": 4,
+      "categoria": "Anillos",
+      "envio": false
+    },
+    {
+      "nombre": "Ring-5",
+      "foto": "img/ring-5.jpg",
+      "descripcion": "Anillo plateado con un diseño distintivo y elegante.",
+      "precio": "32.99",
+      "id": "10",
+      "stock": 6,
+      "categoria": "Anillos",
+      "envio": true
+    }
+  ],
+  "carrito": [
+    [
+      {
+        "nombre": "Neacklace-1",
+        "foto": "img/necklace-1.jpg",
+        "descripcion": "Collar dorado con un diseño elegante y colgante distintivo.",
+        "precio": "99.99",
+        "id": "1"
+      },
+      {
+        "nombre": "Neacklace-2",
+        "foto": "img/necklace-2.jpg",
+        "descripcion": "Collar plateado con un colgante elegante y moderno.",
+        "precio": "129.99",
+        "id": "2"
+      },
+      {
+        "nombre": "Neacklace-3",
+        "foto": "img/necklace-3.jpg",
+        "descripcion": "Collar plateado con un diseño delicado y refinado.",
+        "precio": "59.99",
+        "id": "3"
+      },
+      {
+        "nombre": "Neacklace-4",
+        "foto": "img/necklace-4.jpg",
+        "descripcion": "Collar plateado con un diseño lujoso y sofisticado",
+        "precio": "249.99",
+        "id": "4"
+      },
+      {
+        "nombre": "Neacklace-5",
+        "foto": "img/necklace-5.jpg",
+        "descripcion": "Collar dorado con un diseño clásico y versátil.",
+        "precio": "97.99",
+        "id": "5"
+      },
+      {
+        "nombre": "Ring-1",
+        "foto": "img/ring-1.jpg",
+        "descripcion": "Anillo plateado con un diseño moderno y llamativo.",
+        "precio": "39.99",
+        "id": "6"
+      },
+      {
+        "nombre": "Ring-2",
+        "foto": "img/ring-2.jpg",
+        "descripcion": "Anillo dorado con un diseño sencillo y elegante. ",
+        "precio": "19.99",
+        "id": "7"
+      },
+      {
+        "nombre": "Ring-3",
+        "foto": "img/ring-3.jpg",
+        "descripcion": "Anillo plateado con detalles sutiles y elegantes.",
+        "precio": "29.99",
+        "id": "8"
+      },
+      {
+        "nombre": "Ring-4",
+        "foto": "img/ring-4.jpg",
+        "descripcion": "Anillo dorado con un diseño refinado y moderno.",
+        "precio": "24.99",
+        "id": "9"
+      },
+      {
+        "nombre": "Ring-5",
+        "foto": "img/ring-5.jpg",
+        "descripcion": "Anillo plateado con un diseño distintivo y elegante.",
+        "precio": "32.99",
+        "id": "10"
+      }
     ]
+  ]
 }

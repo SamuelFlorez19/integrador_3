@@ -1,0 +1,73 @@
+/* Variables */
+/* Colores de la pagina */
+
+$color-primario: rgb(168, 118, 118);
+$color-secundario:rgb(245, 225, 229);
+$color-terciario:rgb(243, 204, 212);
+$color-fondo:rgb(245, 244, 244);
+$color-letra-negro: rgb(15,15,15,);
+$color-letra-gris:rgb(87, 86, 86);
+$color-fondo-footer: rgb(83, 82, 82);
+
+/* Tamños de letra  */
+
+$letra-xs: 0.95rem;
+$letra-s: 1rem;
+$letra-m: 1.6rem;
+$letra-l: 2.6rem;
+
+/* Margenes */
+
+$margin-05: 0.5rem;
+$margin-1: 1rem;
+$margin-2: 2rem;
+$margin-3: 3rem;
+
+
+
+.tabla-alta {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: $margin-3;
+    margin-top: 1rem;
+    
+    thead {
+        background-color: $color-primario;
+        color: $color-letra-negro;
+        font-size: $letra-xs;
+        text-align: left;
+
+        th {
+            padding: $margin-05;
+            border: 1px solid $color-secundario;
+        }
+    }
+
+    tbody {
+        font-size: $letra-s;
+        color: $color-letra-gris;
+
+        tr {
+            &:hover {
+                background-color: $color-terciario;
+            }
+
+            td {
+                padding: $margin-2;
+                border: 1px solid $color-secundario;
+            }
+        }
+    }
+
+    th, td {
+        &:first-child {
+            padding-left: $margin-2;
+        }
+
+        &:last-child {
+            padding-right: $margin-2;
+        }
+    }
+
+
+}

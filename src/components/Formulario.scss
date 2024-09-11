@@ -1,0 +1,124 @@
+
+/* Variables */
+/* Colores de la pagina */
+
+$color-primario: rgb(168, 118, 118);
+$color-secundario:rgb(245, 225, 229);
+$color-terciario:rgb(243, 204, 212);
+$color-fondo:rgb(245, 244, 244);
+$color-letra-negro: rgb(15,15,15,);
+$color-letra-gris:rgb(87, 86, 86);
+$color-fondo-footer: rgb(83, 82, 82);
+
+/* Tamños de letra  */
+
+$letra-xxs: 0.7rem;
+$letra-xs: 0.95rem;
+$letra-s: 1rem;
+$letra-m: 1.6rem;
+$letra-l: 2.6rem;
+
+/* Margenes */
+
+$margin-05: 0.5rem;
+$margin-1: 1rem;
+$margin-2: 2rem;
+$margin-3: 3rem;
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: $margin-05;
+    max-width: 520px;
+    background-color: $color-secundario;
+    padding: 1.5rem;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: $letra-l;
+    color: $color-primario;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: $margin-1;
+    
+}
+
+    .title::before, .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: -10px;
+    background-color: $color-primario;
+    margin-right: 10px;
+    }
+
+    .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: $color-primario;
+    }
+
+    .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+    }
+
+.message {
+    color: $color-letra-gris;
+    font-size: $letra-s;
+    font-weight: bolder;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: $margin-1;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: $margin-05;
+    margin: 0.7rem;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input + span {
+    position: absolute;
+    left: $margin-1;
+    top: 15px;
+    color: grey;
+    font-size: $letra-xxs;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: $letra-xs;
+}
+
+.form label .input:focus + span, .form label .input:valid + span {
+    top: 47px;
+    font-size: $letra-xs;
+    font-weight: 600;
+}
+
+.form label .input:valid + span {
+    color: $color-fondo-footer;
+}
